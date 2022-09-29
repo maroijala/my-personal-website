@@ -1,0 +1,61 @@
+ /* general styles */
+ html {
+     box-sizing: border-box;
+ }
+
+ body {
+
+     margin: 0;
+     line-height: 2rem;
+     color: #2b2d42;
+     font-family: 'Roboto Mono', monospace;
+     font-size: 1.1rem;
+     background-color: white
+ }
+
+ section {
+     padding: 0.5rem 3rem;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+ }
+
+ a {
+     color: #2b2d42;
+     text-decoration: none;
+
+ }
+
+ /* editing headings  */
+
+ h1,
+ h2,
+ h3 {
+     line-height: 2rem;
+     margin: 0.5rem, 0rem;
+ }
+
+ h1 {
+     font-family: 'Passions Conflict', cursive;
+     font-size: 4.5rem;
+     margin-bottom: 1.2rem;
+
+ }
+
+ h2 {
+     font-size: 2.7rem;
+ }
+
+ h3 {
+     font-size: 1.7rem;
+     background-color: #90e0ef
+ }
+
+ /* intro section */
+
+ .indrod {
+     position: relative;
+
+ }
