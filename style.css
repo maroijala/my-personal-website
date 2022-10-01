@@ -14,7 +14,8 @@
  }
 
  section {
-     padding: 0.5rem 2rem;
+     padding: 0.5rem 3rem;
+     margin: 0em 15em;
  }
 
  img {
@@ -30,8 +31,8 @@
 
  /* editing headings  */
  #introduction {
+     border: solid red;
      min-height: 100vh;
-     margin: 2rem;
 
  }
 
@@ -76,32 +77,24 @@
 
  } */
  .introd {
+     border: solid red;
+     min-height: 42vh;
      display: grid;
-     width: min-content;
-     margin: 0 auto;
-     grid-column-gap: 0.5em;
+     /* width: min-content; */
+     /* margin: 0 auto; */
+     grid-column-gap: 1em;
      grid-template-areas:
          "img title"
          "img subtitle";
      grid-template-columns: min-content max-content;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
 
  }
 
- .imgg {
-     grid-area: img;
-     min-width: 100px;
-     align-self: center;
- }
 
- .sub_intro {
-     grid-area: subtitle;
-     font-size: 1rem;
-     transition: 0.5s;
- }
-
- .header_intro {
-     grid-area: title;
- }
 
 
 
@@ -140,8 +133,8 @@
 
  /* About me section */
  .aboutc {
-
-     min-height: 42vh;
+     border: solid red;
+     min-height: 45vh;
      color: white;
      background-color: rgba(0, 8, 20, 1);
      text-align: center;
@@ -155,7 +148,7 @@
  .about_title::before {
      content: '';
      display: block;
-     width: 30%;
+     width: 10%;
      height: 0.5px;
      margin: 0.3em auto 0.3em;
      background: white;
@@ -165,7 +158,7 @@
  .about_title::after {
      content: '';
      display: block;
-     width: 30%;
+     width: 10%;
      height: 0.5px;
      margin: 0.3em auto 0.3em;
      background: white;
@@ -190,6 +183,57 @@
 
  }
 
+ /* skills section */
+
+ .skills {
+     border: solid red;
+     height: 42vh;
+ }
+
+ .skills_title {
+     border: solid red;
+     text-align: center;
+     color: #2b2d42;
+ }
+
+ .tools {
+
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .tool1 {
+     border: solid red;
+ }
+
+ .tool2 {
+     border: solid red;
+ }
+
+ .tool3 {
+     border: solid red;
+     margin:
+ }
+
+ .skills_title::before {
+     content: '';
+     display: block;
+     width: 10%;
+     height: 0.5px;
+     margin: 0.3em auto 0.3em;
+     background: black;
+     opacity: .5;
+ }
+
+ .skills_title::after {
+     content: '';
+     display: block;
+     width: 10%;
+     height: 0.5px;
+     margin: 0.3em auto 0.3em;
+     background: black;
+     opacity: .5;
+ }
 
 
  @media(max-width: 650px) {
