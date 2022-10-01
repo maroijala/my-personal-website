@@ -5,7 +5,8 @@
 
  body {
 
-     margin: 0;
+     margin: 0em 15em;
+     border: solid #adb5bd;
      line-height: 2rem;
      color: #2b2d42;
      font-family: 'Roboto Mono', monospace;
@@ -15,7 +16,7 @@
 
  section {
      padding: 0.5rem 3rem;
-     /* margin: 0em 15em; */
+
  }
 
  img {
@@ -30,11 +31,11 @@
  }
 
  /* editing headings  */
- #introduction {
+ /* #introduction {
 
      min-height: 100vh;
 
- }
+ } */
 
  p {
      font-size: small;
@@ -84,7 +85,7 @@
  } */
  .introd {
 
-     min-height: 42vh;
+     min-height: 45vh;
      display: grid;
      /* width: min-content; */
      /* margin: 0 auto; */
@@ -104,7 +105,7 @@
 
 
 
- img {
+ imgg {
      max-width: 120px;
      max-height: 120px;
      border-radius: 50%;
@@ -200,7 +201,7 @@
  /* skills section */
 
  .skills {
-     height: 42vh;
+     height: 45vh;
  }
 
  .skills_title {
@@ -299,11 +300,41 @@
      opacity: .5;
  }
 
+ /* My project section */
  /* achievemet button */
+
+ .projects {
+
+     background-color: black;
+     height: 45vh;
+     text-align: center;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+     grid-column-gap: 3em;
+
+
+ }
+
+ .pro-title {
+     grid-column: 1/-1;
+ }
+
+ .im {
+     max-width: 180px;
+     max-height: 180px;
+
+ }
+
+
+
+
+
  .achieve {
      width: auto;
+     height: 2em;
      display: flex;
      justify-content: center;
+     grid-column: 1/-1;
  }
 
  .achievement {
@@ -324,6 +355,10 @@
      transform: translateY(-0.2em);
      transition: all 0.5s;
  }
+
+
+
+
 
 
  @media(max-width: 650px) {
