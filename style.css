@@ -114,7 +114,7 @@
 
 
 
- /* button edit */
+ /* intro button edit */
 
  #conbut {
 
@@ -141,15 +141,22 @@
  .aboutc {
 
      min-height: 45vh;
-     color: white;
+     color: #48CAE4;
      background-color: rgba(0, 8, 20, 1);
      text-align: center;
+     transition: all .5s;
 
+ }
+
+ .aboutc:hover .para_about {
+     color: white;
+     transition: all .5s;
  }
 
  .about_title {
      position: relative
  }
+
 
  .about_title::before {
      content: '';
@@ -184,6 +191,7 @@
      width: 400px;
  }
 
+
  .para_about+.para_about {
      margin-left: 3rem;
 
@@ -213,6 +221,7 @@
 
  }
 
+ /* border animation */
  .tools::before {
      content: '';
      position: absolute;
@@ -240,13 +249,20 @@
      transition: all .8s ease;
  }
 
+
  .skills:hover .tools::after,
  .skills:hover .tools::before {
 
      border-color: #0077b6;
      width: 100%;
      height: 100%;
-     box-shadow: 1px 1px 5px #2b2d42;
+     box-shadow: 1px 1px 2px #2b2d42;
+
+ }
+
+
+ i {
+     color: #0077b6;
  }
 
  .tool1 {
@@ -281,6 +297,32 @@
      margin: 0.3em auto 0.3em;
      background: black;
      opacity: .5;
+ }
+
+ /* achievemet button */
+ .achieve {
+     width: auto;
+     display: flex;
+     justify-content: center;
+ }
+
+ .achievement {
+     background: none;
+     color: #48CAE4;
+     border: 1px solid;
+     padding: 0.5em 1.5em;
+     border-radius: 0.5em;
+     font-size: 0.7em;
+     transition: all 0.5s;
+
+ }
+
+ .achievement:hover {
+     border-color: #0077b6;
+     color: #0077b6;
+     box-shadow: 0em 0.5em 1em -0.6em #0077b6;
+     transform: translateY(-0.2em);
+     transition: all 0.5s;
  }
 
 
