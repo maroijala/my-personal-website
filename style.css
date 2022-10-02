@@ -119,6 +119,10 @@
      text-decoration: none;
  }
 
+ .nav-close .nav {
+     transform: translateX(100%);
+ }
+
  .nav_items:hover {
      color: #48CAE4;
  }
@@ -137,6 +141,10 @@
  .nav-open .nav {
      transform: translateX(0);
 
+ }
+
+ .nav-open .nav_toggle {
+     position: fixed;
  }
 
  .hamburger {
@@ -285,7 +293,7 @@
  .para_about {
      line-height: 3em;
      font-size: small;
-     width: 400px;
+     /* width: 400px; */
  }
 
 
@@ -297,7 +305,8 @@
  /* skills section */
 
  .skills {
-     height: 45vh;
+     min-height: 45vh;
+     padding: 1em 10em;
  }
 
  .skills_title {
@@ -412,8 +421,6 @@
      justify-items: auto;
      padding: 0em 20em;
 
-
-
  }
 
  .pro-title {
@@ -424,7 +431,6 @@
      /* background-color: #48CAE4; */
      overflow: hidden;
 
-
  }
 
  .im {
@@ -433,7 +439,6 @@
      transition: transform 0.5s cubic-bezier(.5, 0, .5, 1),
          opacity 0.4s linear;
      opacity: .6;
-
 
  }
 
@@ -522,41 +527,59 @@
 
 
 
- @media(max-width: 650px) {
-     h2 {
-         font-size: 2rem;
-     }
-
-     h3 {
-         font-size: 1.1rem;
+ @media(max-width: 1010px) {
+     .projects {
+         display: flex;
+         flex-direction: column;
 
      }
 
-     body {
-
-
-         line-height: 1rem;
-         font-size: 1rem;
+     .paragraph_about {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
 
      }
 
+     .para_about+.para_about {
+         margin-left: 0rem;
+
+     }
  }
 
- @media(max-width: 650px) {
+
+ @media(max-width: 850px) {
+     h1 {
+         font-size: 3rem;
+     }
+
      h2 {
-         font-size: 2rem;
+         font-size: 1.5rem;
      }
 
      h3 {
-         font-size: 1.2rem;
+         font-size: 1rem;
      }
 
      body {
 
 
          line-height: 1rem;
-         font-size: 1rem;
+         font-size: .6rem;
 
      }
+
+     .tools {
+
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         transform: translateY(-1em);
+         text-align: center;
+         transition: all .5s;
+
+     }
+
 
  }
