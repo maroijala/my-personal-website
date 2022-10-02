@@ -5,7 +5,7 @@
 
  body {
 
-     margin: 0em 15em;
+     /* margin: 0em 15em; */
      border: solid #adb5bd;
      line-height: 2rem;
      color: #2b2d42;
@@ -81,7 +81,7 @@
      max-width: 100px;
      font-size: x-large;
      background-color: rgba(0, 8, 20, .9);
-     color: white;
+     color: #48CAE4;
      margin: 0;
  }
 
@@ -122,6 +122,57 @@
  .nav_items:hover {
      color: #48CAE4;
  }
+
+ .nav_toggle {
+     padding: .4em;
+     background: transparent;
+     cursor: pointer;
+     border: 0;
+     position: absolute;
+     right: 1em;
+     top: 1em;
+     z-index: 1000;
+ }
+
+ .nav-open .nav {
+     transform: translateX(0);
+
+ }
+
+ .hamburger {
+     display: block;
+     position: relative;
+ }
+
+ .hamburger,
+ .hamburger::before,
+ .hamburger::after {
+
+     background: #48CAE4;
+     width: 2em;
+     height: 3px;
+     border-radius: 1em;
+     transition: transform 0.3s ease-in-out;
+ }
+
+
+ .hamburger::before,
+ .hamburger::after {
+     content: '';
+     position: absolute;
+     left: 0;
+     right: 0;
+ }
+
+ .hamburger::before {
+     top: 6px;
+ }
+
+ .hamburger::after {
+     bottom: 6px;
+ }
+
+
 
  /* intro section */
 
@@ -189,6 +240,7 @@
      background-color: rgba(0, 8, 20, .9);
      text-align: center;
      transition: all .5s;
+     padding: 2em 15em;
 
  }
 
@@ -231,6 +283,7 @@
  }
 
  .para_about {
+     line-height: 3em;
      font-size: small;
      width: 400px;
  }
@@ -356,7 +409,8 @@
      grid-column-gap: 3em;
      grid-row-gap: 2em;
      align-items: center;
-     justify-items: center;
+     justify-items: auto;
+     padding: 0em 20em;
 
 
 
@@ -364,12 +418,12 @@
 
  .pro-title {
      grid-column: 1/-1;
-
  }
 
  .pro-items {
      /* background-color: #48CAE4; */
      overflow: hidden;
+
 
  }
 
@@ -403,6 +457,7 @@
      display: flex;
      justify-content: center;
      grid-column: 1/-1;
+     padding: 2em 0;
  }
 
  .achievement {
