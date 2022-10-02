@@ -25,7 +25,7 @@
  }
 
  a {
-     color: #2b2d42;
+
      text-decoration: none;
 
  }
@@ -143,7 +143,7 @@
 
      min-height: 45vh;
      color: #48CAE4;
-     background-color: rgba(0, 8, 20, 1);
+     background-color: rgba(0, 8, 20, .9);
      text-align: center;
      transition: all .5s;
 
@@ -305,7 +305,7 @@
 
  .projects {
 
-     background-color: black;
+     background-color: rgba(0, 8, 20, .9);
      min-height: 45vh;
      text-align: center;
      display: grid;
@@ -374,13 +374,49 @@
  }
 
  .achievement:hover {
-     border-color: #0077b6;
-     color: #0077b6;
-     box-shadow: 0em 0.5em 1em -0.6em #0077b6;
+     border-color: white;
+     color: white;
+     box-shadow: 0em 0.5em 1em -0.6em white;
      transform: translateY(-0.2em);
      transition: all 0.5s;
  }
 
+ /* footer section */
+
+ .footer {
+     min-height: max-content;
+     background-color: black;
+     color: #48CAE4;
+     display: grid;
+     align-content: center;
+     justify-content: center;
+     font-size: large;
+     padding: 2em 0em;
+
+ }
+
+
+ .email_link {
+     grid-column: 1/-1;
+     color: #48CAE4;
+ }
+
+ .social_list {
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+
+ }
+
+ .social_l_items {
+     margin: 0 .8em;
+
+ }
+
+ .email_link:hover,
+ .social_l_items:hover {
+     opacity: .8;
+ }
 
 
 
