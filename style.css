@@ -19,10 +19,6 @@
 
  }
 
- img {
-     display: block;
-     max-width: 100%;
- }
 
  a {
 
@@ -579,6 +575,64 @@
          text-align: center;
          transition: all .5s;
 
+     }
+
+     .para_about {
+         line-height: 2em;
+
+     }
+
+
+ }
+
+
+ @media(max-width: 500px) {
+
+     section {
+         padding: 1em 1em;
+         margin: 0%;
+
+
+     }
+
+     .aboutc {
+
+         padding: 1em 1em;
+         margin: 0%;
+     }
+
+     .skills {
+         padding: 1em 1em;
+         margin: 0%;
+     }
+
+     .projects {
+         padding: 1em 1em;
+
+     }
+
+     .imgg {
+         max-width: 70px;
+         max-height: 70px;
+         border-radius: 50%;
+
+     }
+
+     .introd {
+
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         justify-content: center;
+         line-height: 1em;
+     }
+
+     #conbut {
+         transform: translateX(120%);
+     }
+
+     .header_intro {
+         margin-left: .5em;
      }
 
 
